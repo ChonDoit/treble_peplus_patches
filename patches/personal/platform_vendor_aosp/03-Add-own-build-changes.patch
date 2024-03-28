@@ -1,0 +1,57 @@
+From a91a9706d54eceef0ea79c41159c5b55359c5d74 Mon Sep 17 00:00:00 2001
+From: ChonDoit <thphantomblog@gmail.com>
+Date: Sun, 24 Mar 2024 11:17:00 -0300
+Subject: [PATCH] Add own build changes
+
+Change-Id: I1f94f015d19d515d24f6910d4da60551da7c0a21
+---
+ config/phh_gsi.mk | 37 +++++++++++++++++++++++++++++++++++++
+ 1 file changed, 37 insertions(+)
+ create mode 100644 config/phh_gsi.mk
+
+diff --git a/config/phh_gsi.mk b/config/phh_gsi.mk
+new file mode 100644
+index 00000000..1ec8b1b4
+--- /dev/null
++++ b/config/phh_gsi.mk
+@@ -0,0 +1,37 @@
++# Don't Build Kernel
++TARGET_NO_KERNEL_OVERRIDE := true
++
++# Call for Secure build
++$(call inherit-product, device/phh/treble/secure.mk)
++PHH-SECURE_BUILD ?= false
++
++# Use CCache
++USE_CCACHE := true
++
++# Build APN
++PRODUCT_PACKAGES += apns-conf.xml
++
++PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.phh.buildvariant=Gapps
++#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.phh.buildvariant=Gapps-Secure
++#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.phh.buildvariant=Slim
++#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.phh.buildvariant=Slim-Secure
++        
++PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
++    persist.sys.binary_xml=false \
++    dalvik.vm.dex2oat64.enabled=true \
++    ro.system.ota.json_url=https://raw.githubusercontent.com/ChonDoit/treble_peplus_patches/13/ota.json
++
++# PPU Spoof
++PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
++    persist.sys.spoof.first_api_level= \
++    persist.sys.spoof.type= \
++    persist.sys.spoof.tags= \
++    persist.sys.spoof.brand=motorola \
++    persist.sys.spoof.manufacturer=motorola \
++    persist.sys.spoof.device=griffin \
++    persist.sys.spoof.id=MCC24.246-37 \
++    persist.sys.spoof.fingerprint=motorola/griffin_retcn/griffin:6.0.1/MCC24.246-37/42:user/release-keys \
++    persist.sys.spoof.model=XT1650-05 \
++    persist.sys.spoof.product=griffin_retcn \
++    persist.sys.spoof.security_patch=2016-07-01
++
+-- 
+2.34.1
+

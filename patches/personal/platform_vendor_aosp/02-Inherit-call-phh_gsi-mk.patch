@@ -1,0 +1,33 @@
+From bc74248be8fcbc6deb7fc72e30c1a0d32a183636 Mon Sep 17 00:00:00 2001
+From: ChonDoit <thphantomblog@gmail.com>
+Date: Thu, 28 Mar 2024 13:52:15 -0300
+Subject: [PATCH] Inherit call phh_gsi.mk
+
+Change-Id: I1966ddfdba5bba3ccc310bc1307b4384f019ddc1
+---
+ config/common.mk | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/config/common.mk b/config/common.mk
+index c8b7a6c4..e9748637 100644
+--- a/config/common.mk
++++ b/config/common.mk
+@@ -1,6 +1,15 @@
+ # Branding
+ $(call inherit-product, vendor/aosp/config/branding.mk)
+ 
++# PHH GSI
++$(call inherit-product, vendor/aosp/config/phh_gsi.mk)
++
++# Include common sepolicy
++$(call inherit-product, device/custom/sepolicy/common/sepolicy.mk)
++
++# Set Bootanimation at 1080P
++TARGET_BOOT_ANIMATION_RES := 1080
++
+ PRODUCT_BRAND ?= PixelExperience
+ 
+ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+-- 
+2.34.1
+

@@ -1,0 +1,90 @@
+From e2f079e9b30c1b103a86ee37e4e607cdf26c0ad9 Mon Sep 17 00:00:00 2001
+From: MrHereAndThere <38396158+boydaihungst@users.noreply.github.com>
+Date: Fri, 17 Nov 2023 09:22:29 +0700
+Subject: [PATCH 45/46] fix(fod): Extra Dim overlap fod overlay
+
+Extra Dim will set display panel brightness to lowest value possible, which will also effect FOD overlay.
+---
+ .../systemui/biometrics/UdfpsController.java  | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+
+diff --git a/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java b/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java
+index 952d79da0d03..0d1e3823e9ac 100644
+--- a/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java
++++ b/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java
+@@ -166,6 +166,8 @@ public class UdfpsController implements DozeReceiver, Dumpable {
+     @Nullable private final TouchProcessor mTouchProcessor;
+     @NonNull private final AlternateBouncerInteractor mAlternateBouncerInteractor;
+     @NonNull private final SecureSettings mSecureSettings;
++    @NonNull private final ColorDisplayManager mColorDisplayManager;
++    private boolean mIgnoreExtraDim;
+ 
+     // Currently the UdfpsController supports a single UDFPS sensor. If devices have multiple
+     // sensors, this, in addition to a lot of the code here, will be updated.
+@@ -796,7 +798,8 @@ public class UdfpsController implements DozeReceiver, Dumpable {
+             @NonNull PrimaryBouncerInteractor primaryBouncerInteractor,
+             @NonNull SinglePointerTouchProcessor singlePointerTouchProcessor,
+             @NonNull AlternateBouncerInteractor alternateBouncerInteractor,
+-            @NonNull SecureSettings secureSettings) {
++            @NonNull SecureSettings secureSettings,
++	    @NonNull ColorDisplayManager colorDisplayManager) {
+         mContext = context;
+         mExecution = execution;
+         mVibrator = vibrator;
+@@ -838,6 +841,7 @@ public class UdfpsController implements DozeReceiver, Dumpable {
+         mPrimaryBouncerInteractor = primaryBouncerInteractor;
+         mAlternateBouncerInteractor = alternateBouncerInteractor;
+         mSecureSettings = secureSettings;
++	mColorDisplayManager = colorDisplayManager;
+ 
+         mTouchProcessor = mFeatureFlags.isEnabled(Flags.UDFPS_NEW_TOUCH_DETECTION)
+                 ? singlePointerTouchProcessor : null;
+@@ -925,6 +929,11 @@ public class UdfpsController implements DozeReceiver, Dumpable {
+     private void showUdfpsOverlay(@NonNull UdfpsControllerOverlay overlay) {
+         mExecution.assertIsMainThread();
+ 
++	mIgnoreExtraDim = mColorDisplayManager.isReduceBrightColorsActivated();
++        if (mIgnoreExtraDim) {
++            Log.d(TAG, "Current extra dim state (showUdfpsOverlay): " + mIgnoreExtraDim);
++        }
++
+         mOverlay = overlay;
+         final int requestReason = overlay.getRequestReason();
+         if (requestReason == REASON_AUTH_KEYGUARD
+@@ -1114,6 +1123,10 @@ public class UdfpsController implements DozeReceiver, Dumpable {
+             return;
+         }
+         if (isOptical()) {
++	    if (mIgnoreExtraDim) {
++                mColorDisplayManager.setReduceBrightColorsActivated(false);
++                Log.d(TAG, "Extra dim disabled");
++            }
+             mLatencyTracker.onActionStart(LatencyTracker.ACTION_UDFPS_ILLUMINATE);
+         }
+         // Refresh screen timeout and boost process priority if possible.
+@@ -1206,6 +1219,10 @@ public class UdfpsController implements DozeReceiver, Dumpable {
+         mActivePointerId = -1;
+         mAcquiredReceived = false;
+         if (mOnFingerDown) {
++	    if (mIgnoreExtraDim && isOptical()) {
++                mColorDisplayManager.setReduceBrightColorsActivated(true);
++                Log.d(TAG, "Extra dim restored");
++            }
+             if (mAlternateTouchProvider != null) {
+                 mBiometricExecutor.execute(() -> {
+                     mAlternateTouchProvider.onPointerUp(requestId);
+diff --git a/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java b/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java
+index 0d1e3823e9ac..284ee489d842 100644
+--- a/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java
++++ b/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java
+@@ -40,6 +40,7 @@ import android.hardware.fingerprint.FingerprintSensorProperties;
+ import android.hardware.fingerprint.FingerprintSensorPropertiesInternal;
+ import android.hardware.fingerprint.IUdfpsOverlayController;
+ import android.hardware.fingerprint.IUdfpsOverlayControllerCallback;
++import android.hardware.display.ColorDisplayManager;
+ import android.net.Uri;
+ import android.os.Handler;
+ import android.os.PowerManager;
+-- 
+2.34.1
+
