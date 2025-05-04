@@ -1,3 +1,24 @@
+•••••••••• A13_v20250504 ••••••••••
+
+ASB 2025-04
+Bring back Official PE Gapps tree (Expect bigger size)
+Introduced Cornelio Settings
+White on White UI
+Others misc. UI changes
+Added Moto G75 5G resources/fixes
+Added GameSpace
+Little fixes here and there
+
+Dirty should work, still, factory reset is recommended.
+
+•••••••••• A13_v20250317 ••••••••••
+
+Fix disable APCFE Extended features not working
+Sync with sources (ASB: 2025-03)
+Attempt to fix green tint video issue
+
+If coming from previous build, to pass Play Integrity, go to Spoof Settings and change to Auto.
+
 •••••••••• A13_v20240629 ••••••••••
 
 SPL 2024-06
