@@ -1,25 +1,25 @@
-••••• A13_v20240629
+•••••••••• A13_v20240629 ••••••••••
 
-| SPL 2024-06
-| Minor Fixes
+SPL 2024-06
+Minor Fixes
 
-••••• A13_v20240622
+•••••••••• A13_v20240622 ••••••••••
 
-| Signed build
+Signed build
 
 Had to improvise due some PE repos has been shutdown. Don't cry if miss some app (or are more than expected)
 Wipe Data/Factory Reset is a must!
 
-••••• A13_v20240330
+•••••••••• A13_v20240330 ••••••••••
 
-| Merge missing personal patches
+Merge missing personal patches
 
-••••• A13_v20240327
+•••••••••• A13_v20240327 ••••••••••
 
-| Merge missing FOD Fixes
+Merge missing FOD Fixes
 
-••••• A13_v20240326
+•••••••••• A13_v20240326 ••••••••••
 
-| Sync with sources
-| Fixed Safety Net/ Play Integrity
-| Added missing voice components
+Sync with sources
+Fixed Safety Net/ Play Integrity
+Added missing voice components
