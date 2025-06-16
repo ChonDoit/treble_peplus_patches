@@ -1,3 +1,16 @@
+•••••••••• A13_v20250616 ••••••••••
+
+Bluetooth Dialog + OneTap toggle
+ScreenRecord: Fixes + more options
+QS Header + QS Transparency options
+Add Hotspot to QS Internet dialog
+Add OpenEUICC
+Little changes/fixes here and there
+
+TrebleApp
+Add options to spoof Play Store values
+QS Tile to spoof Play Store SDK
+
 •••••••••• A13_v20250504 ••••••••••
 
 ASB 2025-04
