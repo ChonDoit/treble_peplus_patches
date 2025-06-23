@@ -1,3 +1,10 @@
+•••••••••• A13_v20250621 ••••••••••
+
+ASB 2025-06
+Fix Treble app not being able to install IMS
+Fix Windows Secure flags (always on now)
+Minor changes here and there
+
 •••••••••• A13_v20250616 ••••••••••
 
 Bluetooth Dialog + OneTap toggle
