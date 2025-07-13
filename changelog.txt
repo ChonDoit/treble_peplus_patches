@@ -1,3 +1,10 @@
+•••••••••• A13_v20250712 ••••••••••
+
+Fix a SSL Keys issue
+Allow to disable SMSC Workaround
+Allow to override per sim SMSC
+Spoof Settings rework
+
 •••••••••• A13_v20250621 ••••••••••
 
 ASB 2025-06
