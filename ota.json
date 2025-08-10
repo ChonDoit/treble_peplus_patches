@@ -1,38 +1,38 @@
 {
   "version": "v20250712",
-  "date": "1752369244",
+  "date": "1752798347",
   "gsi": "Pixel Experience Plus | by ChonDoe feat. TD",
   "changelog": "https://raw.githubusercontent.com/ChonDoit/treble_peplus_patches/13/changelog.txt",
   "variants": [
     {
       "name": "Gapps",
       "size": "4422414336",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-arm64-bgS_20250712.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-arm64-bgS_20250717.img.xz"
     },
     {
       "name": "Gapps-VNDK-Lite",
       "size": "4333027328",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-arm64-bgS-vndklite_20250712.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-arm64-bgS-vndklite_20250717.img.xz"
     },
     {
       "name": "Gapps-RO",
       "size": "3808813056",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-RO-arm64-bgN_20250712.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-RO-arm64-bgN_20250717.img.xz"
     },
     {
       "name": "Slim",
       "size": "3724505088",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-arm64-bgS-slim_20250712.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-arm64-bgS-slim_20250717.img.xz"
     },
     {
       "name": "Slim-VNDK-Lite",
       "size": "3647520768",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-arm64-bgS-slim-vndklite_20250712.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-arm64-bgS-slim-vndklite_20250717.img.xz"
     },
     {
       "name": "Slim-RO",
       "size": "3122884608",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-RO-arm64-bgN-slim_20250712.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20250712/PE-Plus_A13-RO-arm64-bgN-slim_20250717.img.xz"
     }
   ]
 }
