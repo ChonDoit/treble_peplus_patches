@@ -1,32 +1,87 @@
-•••••••••• A13_v20250712 ••••••••••
+// A13_v20250712
+String[] changes = {
+    "Fix SSL keys issue",
+    "Allow disabling SMSC workaround",
+    "Allow overriding per SIM SMSC",
+    "Spoof settings rework"
+};
 
-Fix a SSL Keys issue
-Allow to disable SMSC Workaround
-Allow to override per sim SMSC
-Spoof Settings rework
+// A13_v2025021
+String[] changes = {
+    "ASB 2025-06
+    "Fix Treble app not being able to install IMS",
+    "Fix Windows Secure flags (always on now)",
+    "Minor changes here and there"
+};
 
-•••••••••• A13_v20250621 ••••••••••
+// A13_v20250616
+String[] changes = {
+    "Bluetooth Dialog + OneTap toggle",
+    "ScreenRecord: Fixes + more options",
+    "QS Header + QS Transparency options"
+    "Add Hotspot to QS Internet dialog"
+    "Add OpenEUICC",
+    "Little changes/fixes here and there"
+};
 
-ASB 2025-06
-Fix Treble app not being able to install IMS
-Fix Windows Secure flags (always on now)
-Minor changes here and there
+    "TrebleApp
+    "Add options to spoof Play Store values",
+    "QS Tile to spoof Play Store SDK",
+};
 
-•••••••••• A13_v20250616 ••••••••••
+// A13_v20250504
+String[] changes = {
+    "ASB 2025-04"
+    "Bring back Official PE Gapps tree (Expect bigger size)",
+    "Introduced Cornelio Settings",
+    "White on White UI",
+    "Others misc. UI changes",
+    "Added Moto G75 5G resources/fixes",
+    "Added GameSpace",
+    "Little fixes here and there"
+    
+    "Dirty should work, still, factory reset is recommended."
+};
 
-Bluetooth Dialog + OneTap toggle
-ScreenRecord: Fixes + more options
-QS Header + QS Transparency options
-Add Hotspot to QS Internet dialog
-Add OpenEUICC
-Little changes/fixes here and there
+// A13_v20250317
+String[] changes = {
+    "Fix disable APCFE Extended features not working",
+    "Sync with sources (ASB: 2025-03)",
+    "Attempt to fix green tint video issue",
 
-TrebleApp
-Add options to spoof Play Store values
-QS Tile to spoof Play Store SDK
+    "If coming from previous build, to pass Play Integrity, go to Spoof Settings and change to Auto."
+};
 
-•••••••••• A13_v20250504 ••••••••••
+// A13_v20240629
+String[] changes = {
+    "SPL 2024-06",
+    "Minor Fixes"
+};
 
+// A13_v20240622
+String[] changes = {
+    "Signed build",
+    
+    "Had to improvise due some PE repos has been shutdown. Don't cry if miss some app (or are more than expected)",
+    "Wipe Data/Factory Reset is a must!"
+};
+
+// A13_v20240330
+String[] changes = {
+    "Merge missing personal patches"
+};
+
+// A13_v20240327
+String[] changes = {
+    "Merge missing FOD Fixes"
+};
+
+// A13_v20240326
+String[] changes = {
+    "Sync with sources",
+    "Fixed Safety Net/Play Integrity",
+    "Added missing voice components"
+};
 ASB 2025-04
 Bring back Official PE Gapps tree (Expect bigger size)
 Introduced Cornelio Settings
