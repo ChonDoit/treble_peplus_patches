@@ -1,84 +1,69 @@
-// A13_v20250712
-String[] changes = {
-    "Fix SSL keys issue",
-    "Allow disabling SMSC workaround",
-    "Allow overriding per SIM SMSC",
-    "Spoof settings rework"
-};
+[Title] A13_v20250712
+[Summary] Fix SSL keys issue
+[Summary] Allow disabling SMSC workaround
+[Summary] Allow overriding per SIM SMSC
+[Summary] Spoof settings rework"
 
-// A13_v2025021
-String[] changes = {
-    "ASB 2025-06
-    "Fix Treble app not being able to install IMS",
-    "Fix Windows Secure flags (always on now)",
-    "Minor changes here and there"
-};
 
-// A13_v20250616
-String[] changes = {
-    "Bluetooth Dialog + OneTap toggle",
-    "ScreenRecord: Fixes + more options",
-    "QS Header + QS Transparency options"
-    "Add Hotspot to QS Internet dialog"
-    "Add OpenEUICC",
-    "Little changes/fixes here and there"
-};
+[Title] A13_v2025021
+[Summary] ASB 2025-06
+[Summary] Fix Treble app not being able to install IMS
+[Summary] Fix Windows Secure flags (always on now)
+[Summary] Minor changes here and there"
 
-    "TrebleApp
-    "Add options to spoof Play Store values",
-    "QS Tile to spoof Play Store SDK",
-};
 
-// A13_v20250504
-String[] changes = {
-    "ASB 2025-04"
-    "Bring back Official PE Gapps tree (Expect bigger size)",
-    "Introduced Cornelio Settings",
-    "White on White UI",
-    "Others misc. UI changes",
-    "Added Moto G75 5G resources/fixes",
-    "Added GameSpace",
-    "Little fixes here and there"
-    
-    "Dirty should work, still, factory reset is recommended."
-};
+[Title] A13_v20250616
+[Summary] Bluetooth Dialog + OneTap toggle
+[Summary] ScreenRecord: Fixes + more options
+[Summary] QS Header + QS Transparency options"
+[Summary] Add Hotspot to QS Internet dialog"
+[Summary] Add OpenEUICC
+[Summary] Little changes/fixes here and there"
 
-// A13_v20250317
-String[] changes = {
-    "Fix disable APCFE Extended features not working",
-    "Sync with sources (ASB: 2025-03)",
-    "Attempt to fix green tint video issue",
+[Title] TrebleApp
+[Summary] Add options to spoof Play Store values
+[Summary] QS Tile to spoof Play Store SDK
 
-    "If coming from previous build, to pass Play Integrity, go to Spoof Settings and change to Auto."
-};
 
-// A13_v20240629
-String[] changes = {
-    "SPL 2024-06",
-    "Minor Fixes"
-};
+[Title] A13_v20250504
+[Summary] ASB 2025-04"
+[Summary] Bring back Official PE Gapps tree (Expect bigger size)
+[Summary] Introduced Cornelio Settings
+[Summary] White on White UI
+[Summary] Others misc. UI changes
+[Summary] Added Moto G75 5G resources/fixes
+[Summary] Added GameSpace
+[Summary] Little fixes here and there"
+[Summary] Dirty should work, still, factory reset is recommended."
 
-// A13_v20240622
-String[] changes = {
-    "Signed build",
-    
-    "Had to improvise due some PE repos has been shutdown. Don't cry if miss some app (or are more than expected)",
-    "Wipe Data/Factory Reset is a must!"
-};
 
-// A13_v20240330
-String[] changes = {
-    "Merge missing personal patches"
-};
+[Title] A13_v20250317
+[Summary] Fix disable APCFE Extended features not working
+[Summary] Sync with sources (ASB: 2025-03)
+[Summary] Attempt to fix green tint video issue
+[Summary] If coming from previous build, to pass Play Integrity, go to Spoof Settings and change to Auto."
 
-// A13_v20240327
-String[] changes = {
-    "Merge missing FOD Fixes"
-};
 
-// A13_v20240326
-String[] changes = {
-    "Sync with sources",
-    "Fixed Safety Net/Play Integrity",
-    "Added missing voice components"
-};
+[Title] A13_v20240629
+[Summary] SPL 2024-06
+[Summary] Minor Fixes"
+
+
+[Title] A13_v20240622
+[Summary] Signed build
+[Summary] Had to improvise due some PE repos has been shutdown. Don't cry if miss some app (or are more than expected)
+[Summary] Wipe Data/Factory Reset is a must!"
+
+
+[Title] A13_v20240330
+[Summary] Merge missing personal patches"
+
+
+[Title] A13_v20240327
+[Summary] Merge missing FOD Fixes"
+
+
+[Title] A13_v20240326
+[Summary] Sync with sources
+[Summary] Fixed Safety Net/Play Integrity
+[Summary] Added missing voice components"
