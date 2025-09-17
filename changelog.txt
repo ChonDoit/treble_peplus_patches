@@ -1,3 +1,16 @@
+[Title] v20250915 | PRE-RELEASE
+[Summary] Updated Spoof method
+[Summary] Added Keybox spoof setting (Cornelio > Misc)
+[Summary] Updated Settings UI
+[Summary] Updated Treble Settings
+[Summary] Miscellaneous changes
+[Summary] 
+[Summary] IMPORTANT
+[Summary] Clear Treble Settings data and setup again.
+[Summary] 
+[Summary] UNDER TEST
+[Summary] use alternate Audio Policy working fine out of the box
+
 [Title] v20250712
 [Summary] Fix SSL keys issue
 [Summary] Allow disabling SMSC workaround
