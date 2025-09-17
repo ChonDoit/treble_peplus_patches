@@ -9,7 +9,7 @@
 [Summary] Clear Treble Settings data and setup again.
 [Summary] 
 [SummaryTitle] UNDER TEST
-[Summary] use alternate Audio Policy working fine out of the box
+[Summary] Check if use alternate Audio Policy works fine out of the box
 
 [Title] v20250712
 [Summary] Fix SSL keys issue
