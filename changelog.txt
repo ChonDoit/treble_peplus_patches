@@ -5,10 +5,10 @@
 [Summary] Updated Treble Settings
 [Summary] Miscellaneous changes
 [Summary] 
-[Summary] IMPORTANT
+[SummaryBold] IMPORTANT
 [Summary] Clear Treble Settings data and setup again.
 [Summary] 
-[Summary] UNDER TEST
+[SummaryBold] UNDER TEST
 [Summary] use alternate Audio Policy working fine out of the box
 
 [Title] v20250712
