@@ -1,3 +1,9 @@
+[Title] v20250928
+[Summary] More granular spoof options
+[Summary] Treble Settings updates
+[Summary] Allow +1 certs for Keybox Spoof
+[Summary] Allow app downgrade
+
 [Title] v20250915 | PRE-RELEASE
 [Summary] Updated Spoof method
 [Summary] Added Keybox spoof setting (Cornelio > Misc)
