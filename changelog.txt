@@ -1,3 +1,8 @@
+[Title] v20251201
+[Summary] Improvements to keybox option
+[Summary] ASB 2025-11
+[Summary] Updated TrebleApp
+
 [Title] v20250928
 [Summary] More granular spoof options
 [Summary] Treble Settings updates
