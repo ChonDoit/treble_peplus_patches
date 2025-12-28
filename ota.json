@@ -1,58 +1,68 @@
 {
-  "version": "v20251201",
-  "date": "1764601366",
+  "version": "v20251218",
+  "date": "1766936750",
   "gsi": "Pixel Experience Plus | by ChonDoe feat. TD",
   "changelog": "https://raw.githubusercontent.com/ChonDoit/treble_peplus_patches/13/changelog.txt",
   "variants": [
     {
       "name": "Slim-Secure-VNDK-Lite",
       "size": "3648282624",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251201/PE-Plus_A13-arm64-bgN-slim-vndklite_20251201.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-arm64-bgN-slim-vndklite_20251228.img.xz"
     },
     {
       "name": "Slim-Secure",
       "size": "3636011008",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251201/PE-Plus_A13-arm64-bgN-slim_20251201.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-arm64-bgN-slim_20251228.img.xz"
     },
     {
       "name": "Gapps-Secure-VNDK-Lite",
       "size": "4333785088",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251201/PE-Plus_A13-arm64-bgN-vndklite_20251201.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-arm64-bgN-vndklite_20251228.img.xz"
     },
     {
       "name": "Gapps-Secure",
       "size": "4321513472",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251201/PE-Plus_A13-arm64-bgN_20251201.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-arm64-bgN_20251228.img.xz"
     },
     {
       "name": "Slim-VNDK-Lite",
       "size": "3649978368",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251201/PE-Plus_A13-arm64-bgS-slim-vndklite_20251201.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-arm64-bgS-slim-vndklite_20251228.img.xz"
     },
     {
       "name": "Slim",
       "size": "3727003648",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251201/PE-Plus_A13-arm64-bgS-slim_20251201.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-arm64-bgS-slim_20251228.img.xz"
     },
     {
       "name": "Gapps-VNDK-Lite",
       "size": "4335480832",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251201/PE-Plus_A13-arm64-bgS-vndklite_20251201.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-arm64-bgS-vndklite_20251228.img.xz"
     },
     {
       "name": "Gapps",
       "size": "4424908800",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251201/PE-Plus_A13-arm64-bgS_20251201.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-arm64-bgS_20251228.img.xz"
     },
     {
       "name": "Slim-RO",
       "size": "3125161984",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251201/PE-Plus_A13-RO-arm64-bgN-slim_20251201.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-RO-arm64-bgN-slim_20251228.img.xz"
     },
     {
       "name": "Gapps-RO",
       "size": "3811106816",
-      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251201/PE-Plus_A13-RO-arm64-bgN_20251201.img.xz"
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-RO-arm64-bgN_20251228.img.xz"
+    },
+    {
+      "name": "Slim-ERO",
+      "size": "2305294336",
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v2025128/PE-Plus_A13-ERO-arm64-bgN-slim_20251228.img.xz"
+    },
+    {
+      "name": "Gapps-ERO",
+      "size": "2762067968",
+      "url": "https://github.com/ChonDoit/treble_peplus_patches/releases/download/v20251228/PE-Plus_A13-ERO-arm64-bgN_20251228.img.xz"
     }
   ]
 }
